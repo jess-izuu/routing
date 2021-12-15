@@ -7,6 +7,7 @@ import { PlanesComponent } from './planes/planes.component';
 import { TrainsComponent } from './trains/trains.component';
 import { CarsComponent } from './cars/cars.component';
 import { BikesComponent } from './bikes/bikes.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { BikesComponent } from './bikes/bikes.component';
     PlanesComponent,
     TrainsComponent,
     CarsComponent,
-    BikesComponent
+    BikesComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
