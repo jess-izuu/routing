@@ -21,7 +21,7 @@
           <div class="row">
             <div class="col-12">
               <header id="header">
-                <h1><a routerLink="/" id="logo">Minimaxing</a></h1>
+                <h1><a routerLink="/" id="logo">transportcentral</a></h1>
                 <nav id="nav">
                   <a routerLink="/" routerLinkActive="active">Home</a>
                   <a routerLink="/trains" routerLinkActive="active">Trains</a>
@@ -40,40 +40,46 @@
         <div class="container">
           <div class="row main-row">
             <div class="col-12">
-              <div >
-              <button class="button" (click)="toggleView(1)"> Types of Aircrafts</button>
-              <br>
-              <button class="button" (click)="toggleView(13)"> AirCraft Classifcations</button>
-              <br>
-              <button class="button" (click)="toggleView(0)"> Types of Planes</button>
-              <br>
-              <div [ngClass]="{'isShown': isShownn, 'isHidden': isHiddenn}">
-              <section *ngIf="showPlanes">
-                <h2>Types of Planes</h2>
-                <h1 *ngFor="let type of types; let i = index">
-                  {{type}}
-                  <p>{{desc[i]}}</p>
-                  <br>
-                </h1>
-              </section>
-              <section *ngIf="showAircrafts">
-                <h2>Types of Aircrafts</h2>
-                <h1 *ngFor="let type of typesCrafts; let i = index">
-                  {{type}}
-                  <p>{{descCrafts[i]}}</p>
-                  <br>
-                </h1>
-              </section>
-              <section *ngIf="showClassification">
-                <h2>Classifications of planes</h2>
-                <h1 *ngFor="let type of typeClass; let i = index">
-                  {{type}}
-                  <p>{{descClass[i]}}</p>
-                  <br>
-                </h1>
-              </section>
-            </div>
-            </div>
+              <div>
+                <button class="button" (click)="toggleView(1)">
+                  Types of Aircrafts
+                </button>
+                <br />
+                <button class="button" (click)="toggleView(13)">
+                  AirCraft Classifcations
+                </button>
+                <br />
+                <button class="button" (click)="toggleView(0)">
+                  Types of Planes
+                </button>
+                <br />
+                <div [ngClass]="{ isShown: isShownn, isHidden: isHiddenn }">
+                  <section *ngIf="showPlanes">
+                    <h2>Types of Planes</h2>
+                    <h1 *ngFor="let type of types; let i = index">
+                      {{ type }}
+                      <p>{{ desc[i] }}</p>
+                      <br />
+                    </h1>
+                  </section>
+                  <section *ngIf="showAircrafts">
+                    <h2>Types of Aircrafts</h2>
+                    <h1 *ngFor="let type of typesCrafts; let i = index">
+                      {{ type }}
+                      <p>{{ descCrafts[i] }}</p>
+                      <br />
+                    </h1>
+                  </section>
+                  <section *ngIf="showClassification">
+                    <h2>Classifications of planes</h2>
+                    <h1 *ngFor="let type of typeClass; let i = index">
+                      {{ type }}
+                      <p>{{ descClass[i] }}</p>
+                      <br />
+                    </h1>
+                  </section>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -84,14 +90,10 @@
         <div class="container">
           <div class="row">
             <div class="col-8 col-12-medium">
-              <section>
-                
-              </section>
+              <section></section>
             </div>
             <div class="col-4 col-12-medium">
-              <section>
-                
-              </section>
+              <section></section>
             </div>
           </div>
           <div class="row">
