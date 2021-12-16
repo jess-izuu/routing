@@ -1,0 +1,46 @@
+.red {
+  background-color: rgb(238, 130, 130);
+  color: black;
+}
+
+.buttonRed {
+  background-color: rgb(238, 130, 130);
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+.buttonRed::after {
+  background-color: rgb(238, 130, 130);
+  content: " Departures";
+  border-radius: 5px;
+}
+
+.blue {
+  background-color: rgb(106, 185, 195);
+}
+
+.buttonBlue {
+  background-color: rgb(106, 185, 195);
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+.buttonBlue::after {
+  background-color: rgb(106, 185, 195);
+  content: " Arrivals";
+  border-radius: 5px;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 8px;
+  color: black;
+}
