@@ -5,7 +5,15 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
+.isShown{
+  background-color: white;
+},
+.isHidden{
+  background-color: lightgray;
+},
+.normal{
 
+}
 html,
 body,
 div,
@@ -13,8 +21,12 @@ span,
 applet,
 object,
 iframe,
-h1,
-h2,
+h1{
+  color: black;
+},
+h2{
+  color: black;
+},
 h3,
 h4,
 h5,
@@ -194,6 +206,8 @@ h4 {
 
 h1 {
   text-transform: lowercase;
+  color: black;
+  font-size: 2em;
 }
 
 h2 {
@@ -225,6 +239,8 @@ ul {
 
 p {
   line-height: 1.8em;
+  color: #007897;
+  font-size:  .5em;
 }
 
 strong {
